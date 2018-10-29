@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Knewave" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Photo Ninja</title>
+  <style>
+    html, body{
+      height:100%;
+    }
+    .parallax-container, .container{
+      font-family: 'Knewave', cursive;
+    }
+    .brand-logo{
+      margin-left: 2%;
+    }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .container{
+      background: color #0a1f31;;
+    }
+    .helloClass{
+      margin-left:50%;
+      margin-top:6.5%;
+    }
+    .nameClass{
+      margin-left:50%;
+      margin-top:1.25%;
+    }
+    .firstParallax, .secondParallax, .thirdParallax, .container, .carousel{
+      height:100%;
+    }
+    nav{
+      font-family: 'Abel', sans-serif;
+    }
+    .carousel .carousel-item>img{
+  		height: 100%;
+  		width: 100%;
+  	}
+  	.next, .prev{
+  		position: absolute;
+  		top:45%;
+  		color:white;
+  		cursor: pointer;
+  	}
+  	.prev{
+  		left: 0px;
+  	}
+    
+    .next{
+    	right:0px;
+    }
+
+    .thirdCaption{
+      margin-top:10%;
+      margin-left:-52%;
+    }
+
+    .fourthCaption{
+      margin-top:-4%;
+      margin-right:5%;
+    }
+
+  </style>
+</head>
+<body class = "black">
+
+  <!-- navbar -->
+  
+  <nav>
+    <div class="nav-wrapper black">
+      <a href="#" class="brand-logo">Brand Logo Goes here</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <!-- parallax -->
+  <div class="parallax-container firstParallax">
+        <h4 class="helloClass white-text overlay left-align">
+          Hello, my name is
+        </h4>
+        <h1 class="nameClass white-text overlay left-align">
+          David Chang.
+        </h1>
+      <div class="parallax">
+        <img src="background2.jpg" alt="" class="responsive-img">
+      </div>
+  </div>
+
+  <!-- photo / grid -->
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <a href="https://github.com/chang19d/mySQL-Node-Amazon-app" class="carousel-item">
+          <img src="bamazon.jpg">
+        </a>
+        <div class="caption right-align">
+          <h3>Amazon Mimic Storefront</h3>
+          <h5 class="light grey-text text-lighten-3">Node.js/SQL/Inquirer</h5>
+        </div>
+      </li>
+      <li>
+        <a href="https://github.com/chang19d/LIRI_Bot" class="carousel-item">
+          <img src="liribot.jpg">
+        </a>
+        <div class="caption right-align">
+          <h3>CommandLine Bot</h3>
+          <h5 class="light grey-text text-lighten-3">Node.js/OMDB/SpotifyAPI/Bands-in-town/AXIOS</h5>
+        </div>
+      </li>
+      <li>
+        <a href="https://torre-matthew.github.io/Git-Lit/" class="carousel-item">
+          <img src="gitlit.jpg">
+        </a>
+        <div class="caption right-align thirdCaption">
+          <h3 class="black-text">Cocktail Group Project</h3>
+          <h5 class="light black-text text-lighten-3">jQuery/Bootstrap/Typeahead.js/CocktailDB</h5>
+        </div>
+      </li>
+      <li>
+        <a href="https://chang19d.github.io/Giphy-Viewer/" class="carousel-item">
+          <img src="giphyviewer.jpg">
+        </a>
+        <div class="caption right-align fourthCaption">
+          <h3 class="black-text">Giphy Viewer</h3>
+          <h5 class="light black-text text-lighten-3">jQuery/Bootstrap</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- <div class="full-silder">
+    <div class="carousel carousel-slider" data-indicators="true">
+      <a href="https://github.com/chang19d/mySQL-Node-Amazon-app" class="carousel-item">
+        <img src="bamazon.jpg">
+      </a>
+      <a href="https://github.com/chang19d/LIRI_Bot" class="carousel-item">
+        <img src="liribot.jpg">
+      </a>
+      <a href="https://torre-matthew.github.io/Git-Lit/" class="carousel-item">
+        <img src="gitlit.jpg">
+      </a>
+      <a href="https://chang19d.github.io/Giphy-Viewer/" class="carousel-item">
+        <img src="giphyviewer.jpg">
+      </a>
+
+      <div class="next transparent"><i class="material-icons large">navigate_next</i></div>
+      <div class="prev transparent"><i class="material-icons large">navigate_before</i></div>
+  </div>
+
+  </div>   -->
+  <!-- -------------------------------------------------------------------------------- -->
+  <!-- <div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+    </div>
+    <div class="carousel-item black white-text" href="#one!">
+      <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p>
+      <a href="https://torre-matthew.github.io/Git-Lit/">
+        <img src="background00.jpg" alt="Git lit!">
+      </a>
+    </div>
+    <div class="carousel-item black white-text" href="#two!">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item black white-text" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item black white-text" href="#four!">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
+  </div> -->
+
+  <!-- parallax -->
+  <div class="parallax-container secondParallax">
+    <div class="parallax">
+      <img src="background.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- services / tabs -->
+  <div class="container">
+    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+  </div>
+
+  <!-- parallax -->
+  <div class="parallax-container thirdParallax">
+    <div class="parallax">
+      <img src="background1.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- contact form -->
+  <!-- <div class="container">
+    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+  </div> -->
+
+  <!-- footer -->
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+    });
+    
+    $(document).ready(function(){
+      $('.slider').slider();
+    });
+
+    // $(document).ready(function(){
+  	// 	$('.carousel').carousel({fullWidth:true}).css("height", $(window).height());
+  	// 	// for next slide
+  	// 	$('.next').click(function(){
+  	// 		$('.carousel').carousel('next');
+  	// 	});
+        
+    //     // for prev slide
+    //     $('.prev').click(function(){
+  	// 		$('.carousel').carousel('prev');
+  	// 	});
+  	// });
+    
+    // $('.carousel.carousel-slider').carousel({
+    //   fullWidth: true,
+    //   indicators: true
+    // });
+
+  </script>
+</body>
+</html>
