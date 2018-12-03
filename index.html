@@ -38,6 +38,13 @@
       margin-left:50%;
       margin-top:1.25%;
     }
+    .projectsClass{
+      margin-left:25%;
+      margin-top:10%;
+    }
+    .projects2Class{
+      margin-left:27.5%;
+    }
     .firstParallax, .secondParallax, .thirdParallax, .container, .carousel{
       height:100%;
     }
@@ -72,9 +79,23 @@
       margin-right:5%;
     }
 
+    #firstPanel{
+      background-image: url("bamazon.jpg");
+      background-repeat: no-repeat;
+      height: 100vh;
+      background-size: cover;
+    }
+
+    #secondPanel{
+      background-image: url("liribot.jpg");
+      background-repeat: no-repeat;
+      height: 100vh;
+      background-size: cover;
+    }
+
   </style>
 </head>
-<body class = "black">
+<body class="black">
 
   <!-- navbar -->
   
@@ -82,9 +103,9 @@
     <div class="nav-wrapper black">
       <a href="#" class="brand-logo">Brand Logo Goes here</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="https://github.com/chang19d">GitHub</a></li>
       </ul>
     </div>
   </nav>
@@ -103,114 +124,167 @@
       </div>
   </div>
 
-  <!-- photo / grid -->
-  <div class="slider">
-    <ul class="slides">
-      <li>
-        <a href="https://github.com/chang19d/mySQL-Node-Amazon-app" class="carousel-item">
-          <img src="bamazon.jpg">
-        </a>
-        <div class="caption right-align">
-          <h3>Amazon Mimic Storefront</h3>
-          <h5 class="light grey-text text-lighten-3">Node.js/SQL/Inquirer</h5>
-        </div>
-      </li>
-      <li>
-        <a href="https://github.com/chang19d/LIRI_Bot" class="carousel-item">
-          <img src="liribot.jpg">
-        </a>
-        <div class="caption right-align">
-          <h3>CommandLine Bot</h3>
-          <h5 class="light grey-text text-lighten-3">Node.js/OMDB/SpotifyAPI/Bands-in-town/AXIOS</h5>
-        </div>
-      </li>
-      <li>
-        <a href="https://torre-matthew.github.io/Git-Lit/" class="carousel-item">
-          <img src="gitlit.jpg">
-        </a>
-        <div class="caption right-align thirdCaption">
-          <h3 class="black-text">Cocktail Group Project</h3>
-          <h5 class="light black-text text-lighten-3">jQuery/Bootstrap/Typeahead.js/CocktailDB</h5>
-        </div>
-      </li>
-      <li>
-        <a href="https://chang19d.github.io/Giphy-Viewer/" class="carousel-item">
-          <img src="giphyviewer.jpg">
-        </a>
-        <div class="caption right-align fourthCaption">
-          <h3 class="black-text">Giphy Viewer</h3>
-          <h5 class="light black-text text-lighten-3">jQuery/Bootstrap</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <!-- <div class="full-silder">
-    <div class="carousel carousel-slider" data-indicators="true">
-      <a href="https://github.com/chang19d/mySQL-Node-Amazon-app" class="carousel-item">
-        <img src="bamazon.jpg">
-      </a>
-      <a href="https://github.com/chang19d/LIRI_Bot" class="carousel-item">
-        <img src="liribot.jpg">
-      </a>
-      <a href="https://torre-matthew.github.io/Git-Lit/" class="carousel-item">
-        <img src="gitlit.jpg">
-      </a>
-      <a href="https://chang19d.github.io/Giphy-Viewer/" class="carousel-item">
-        <img src="giphyviewer.jpg">
-      </a>
+  <div class="container valign-wrapper" id="about">
+    <div class="section">
 
-      <div class="next transparent"><i class="material-icons large">navigate_next</i></div>
-      <div class="prev transparent"><i class="material-icons large">navigate_before</i></div>
-  </div>
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center white-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center white-text">Core Concepts</h5>
+              <ul class="center white-text">
+                <li>HTML/CSS/JavaScript</li>
+                <li>jQuery</li>
+                <li>Ajax</li>
+                <li>Node.js</li>
+                <li>mySQL</li>
+                <li>Express</li>
+                <li>Handlebars</li>
+                <li>Sequelize</li>
+              </ul>
+          </div>
+        </div>
 
-  </div>   -->
-  <!-- -------------------------------------------------------------------------------- -->
-  <!-- <div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center white-text"><i class="material-icons">group</i></h2>
+            <h5 class="center white-text">Easy to Work With</h5>
+
+            <p class="light white-text">Over the course of the Web Development Bootcamp I am enrolled in, I have had the opportunity to work on group projects to simulate a more realistic work environment. These projects include Git Lit! and iDecide. More group collaborations to come.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center white-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center white-text">Still Learning!</h5>
+
+            <p class="light white-text">As a college and bootcamp student, I will be continuing my education in Web Development over the course of the next two years. I will be updating my known technologies list as frequently as I learn new things, such as MongoDB and React.js</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="carousel-item black white-text" href="#one!">
-      <h2>First Panel</h2>
-      <p class="white-text">This is your first panel</p>
-      <a href="https://torre-matthew.github.io/Git-Lit/">
-        <img src="background00.jpg" alt="Git lit!">
-      </a>
-    </div>
-    <div class="carousel-item black white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
-    </div>
-    <div class="carousel-item black white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item black white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
-    </div>
-  </div> -->
+  </div>
 
   <!-- parallax -->
   <div class="parallax-container secondParallax">
+    <h4 class="projectsClass white-text overlay left-align">
+      Group and Individual
+    </h4>
+    <h1 class="projects2Class white-text overlay left-align">
+      Projects
+    </h1>
     <div class="parallax">
       <img src="background.jpg" alt="" class="responsive-img">
     </div>
   </div>
 
-  <!-- services / tabs -->
-  <div class="container">
-    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+  <!-- <div class="carousel carousel-slider center" id="projects">
+      <div class="carousel-item transparent white-text" href="#one!">
+        <img src="iDecide.png">
+        <a class="btn waves-effect white grey-text darken-text-2">button</a>
+      </div>
+      <div class="carousel-item transparent white-text" href="#two!">
+        <img src="gitlit.jpg">
+      </div>
+      <div class="carousel-item transparent white-text" href="#three!">
+        <img src="liribot.jpg">
+      </div>
+      <div class="carousel-item transparent white-text" href="#four!">
+        <img src="giphyviewer.jpg">
+      </div>
+  </div> -->
+
+  <!-- CARDS -->
+  <div class="container " id="projects">
+    <div class="row">
+      <!-- CARD ONE -->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img src="iDecide.png">
+            <span class="card-title">iDecide</span>
+          </div>
+          <div class="card-content">
+            <p>Group project that helps people make decisions through a voting system.</p>
+            <br>
+            <p>Google Auth, Node.js, Mongo/MySql, Handlebars.js, Express.js</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/torre-matthew/TheCrimsonKnuckleRepo">Github</a>
+            <a href="https://desolate-hamlet-84600.herokuapp.com">Deployed Site</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD TWO -->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img src="gitlit.jpg">
+            <span class="card-title black-text">Git Lit!</span>
+          </div>
+          <div class="card-content">
+            <p>Group project that allows the user to search for drink recipes and random recipes.</p>
+            <br>
+            <p>Youtube API, CocktailDB, Typeahead.js, AJAX, jQuery, Bootstrap</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/torre-matthew/Git-Lit">Github</a>
+            <a href="https://torre-matthew.github.io/Git-Lit/">Deployed Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="row">
+      <!-- CARD THREE -->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img src="liribot.jpg">
+            <span class="card-title">Liri Bot</span>
+          </div>
+          <div class="card-content">
+            <p>A command line node app that takes in certain search parameters and returns data from APIs.</p>
+            <br>
+            <p>Bands in Town API, Spotify API, OMDB API, Node.js, Axios</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chang19d/LIRI_Bot">Github</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD FOUR -->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img src="giphyviewer.jpg">
+            <span class="card-title black-text">Giphy Viewer</span>
+          </div>
+          <div class="card-content">
+            <p>A command line node app that takes in certain search parameters and returns data from APIs.</p>
+            <br>
+            <p>Giphy API, AJAX, jQuery</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chang19d/Giphy-Viewer">Github</a>
+            <a href="https://chang19d.github.io/Giphy-Viewer/">Deployed Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
   </div>
 
-  <!-- parallax -->
+  <!-- parallax
   <div class="parallax-container thirdParallax">
     <div class="parallax">
       <img src="background1.jpg" alt="" class="responsive-img">
     </div>
-  </div>
+  </div> -->
 
   <!-- contact form -->
   <!-- <div class="container">
@@ -232,27 +306,14 @@
       $('.parallax').parallax();
     });
     
-    $(document).ready(function(){
-      $('.slider').slider();
-    });
-
     // $(document).ready(function(){
-  	// 	$('.carousel').carousel({fullWidth:true}).css("height", $(window).height());
-  	// 	// for next slide
-  	// 	$('.next').click(function(){
-  	// 		$('.carousel').carousel('next');
-  	// 	});
-        
-    //     // for prev slide
-    //     $('.prev').click(function(){
-  	// 		$('.carousel').carousel('prev');
-  	// 	});
-  	// });
-    
-    // $('.carousel.carousel-slider').carousel({
-    //   fullWidth: true,
-    //   indicators: true
+    //   $('.slider').slider();
     // });
+    
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
 
   </script>
 </body>
